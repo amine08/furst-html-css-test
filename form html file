@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charest="UTF-8" />
+    <title>Test Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  
+  <body>
+    <h1 id="title" >Form for the next test</h1>
+    <p id="description" >You need to register for the next test</p>
+    <form id="survey-form" >  
+      <fieldset>    
+      <label id="name-label" >Full Name:<input id="name" type="text" placeholder="your full name" required />
+      </label>
+      <label id="email-label" >Email:<input id="email" type="email" placeholder="your email" required />
+      </label>
+      <label id="number-label" >Age:<input id="number" type="number" max="90" min="15" placeholder="your age" > </label>
+      </fieldset>
+      <fieldset>
+      <label>Test in:
+       <select id="dropdown" >
+         <option>(select your test)</option>
+         <option>Front end test</option>
+         <option>Back end test</option>
+       </select>
+      </label>
+      <label> <input class="one" id="beginer-test" name="test-level" type="radio" value="B" checked />Beginer</label>
+     <label> <input class="one" id="advencer-test" name="test-level" type="radio" value="A" />Advencer</label>
+      </fieldset>
+      <fieldset class='two'>
+        <lagend>Test in:</lagend>
+      <label>Html <input class="one" type="checkbox" value="1" checked /></label>
+      <label>Css <input class="one" type="checkbox" value="2" /></label>
+      <label>Java Script <input class="one" type="checkbox" value="3" /></label>
+      <label>Python <input class="one" type="checkbox" value="4" /></label>
+      </fieldset>
+      <label>Add information about your test:<textarea placeholder="additinla comment for your test..." ></textarea>
+      </label>
+      
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
